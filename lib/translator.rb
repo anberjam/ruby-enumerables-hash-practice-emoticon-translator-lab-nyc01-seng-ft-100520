@@ -5,8 +5,9 @@ require 'yaml'
 def load_library(path)
   emoticons= YAML.load_file(path)
   emoticon_name= Hash.new
+  puts emoticons.length
   
-  # code goes here
+  
   emoticon_name
 end
 
