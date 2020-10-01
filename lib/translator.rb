@@ -10,7 +10,9 @@ def load_library(path)
     array_faces.each do |each_face|
       if emoticon_name[emotion]==NIL
         emoticon_name[emotion] = Hash.new
+        emoticon_name[emotion][:english] = each_face
       end
+      
     end
   end
   
