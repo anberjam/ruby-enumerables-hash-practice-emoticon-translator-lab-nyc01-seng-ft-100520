@@ -1,16 +1,13 @@
 # require modules here
 require 'yaml'
-emoticons= YAML.load_file('lib/emoticons.yml')
 
-def load_library(emoticons)
-  
+
+def load_library(path)
+  emoticons= YAML.load_file(file)
   emoticon_name= Hash.new
   emoticons.each do |emotion, array_faces|
     array_faces.each do |face|
-      if emoticon_name[emotion]=nil 
-        emoticon_name[emotion]={:english => face}
-      else 
-        emoticon_name[emotion][:japanese]= face
+      con_name[emotion][:japanese]= face
       end
     end
   end
