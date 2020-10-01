@@ -11,6 +11,8 @@ def load_library(path)
       if emoticon_name[emotion]==NIL
         emoticon_name[emotion] = Hash.new
         emoticon_name[emotion][:english] = each_face
+      else
+        emoticon_name[emotion][:japanese] = each_face
       end
       
     end
