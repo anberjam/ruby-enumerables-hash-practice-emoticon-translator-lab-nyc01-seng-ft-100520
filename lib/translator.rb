@@ -31,7 +31,7 @@ end
 
 
 def get_english_meaning (path, japanese_face)
-  load_library(path)
+  emoticon_name = load_library(path)
   emoticon_name.each do |emotion, language|
     language.each do |language, face|
       if face==japanese_face
