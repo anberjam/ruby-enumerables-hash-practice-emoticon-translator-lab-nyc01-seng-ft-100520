@@ -14,18 +14,19 @@ def load_library(path)
       else
         emoticon_name[emotion][:japanese] = each_face
       end
-      
     end
   end
-  
-  
   emoticon_name
 end
 
+
 def get_japanese_emoticon
   # code goes here
+  
 end
 
-def get_english_meaning
+def get_english_meaning(path)
+  load_library(path)
   # code goes here
+  
 end
