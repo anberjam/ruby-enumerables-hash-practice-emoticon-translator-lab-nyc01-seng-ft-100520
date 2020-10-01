@@ -40,5 +40,7 @@ def get_english_meaning (path, japanese_face)
       end
     end
   end
+ if meaning == ""
+   return
   
 end
