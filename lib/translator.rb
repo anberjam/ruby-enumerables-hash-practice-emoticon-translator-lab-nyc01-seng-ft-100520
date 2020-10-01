@@ -22,12 +22,21 @@ end
 
 def get_japanese_emoticon (path, english_face)
   load_library(path)
-  emoticon_name
+  
   
 end
 
+
+
+
+
 def get_english_meaning(path, japanese_face)
   load_library(path)
-  
+  emoticon_name.each do |emotion, language|
+    language.each do |language, face|
+      if face==japanese_face
+      end
+    end
+  end
   
 end
