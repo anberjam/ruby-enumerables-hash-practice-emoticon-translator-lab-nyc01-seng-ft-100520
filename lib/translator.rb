@@ -32,10 +32,11 @@ end
 
 def get_english_meaning (path, japanese_face)
   emoticon_name = load_library(path)
+  meaning = ""
   emoticon_name.each do |emotion, language|
     language.each do |language, face|
       if face==japanese_face
-        return emotion
+        meaning = emotion
       end
     end
   end
