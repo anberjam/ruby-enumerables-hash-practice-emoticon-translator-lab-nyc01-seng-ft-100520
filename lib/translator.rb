@@ -5,7 +5,11 @@ require 'yaml'
 def load_library(path)
   emoticons= YAML.load_file(path)
   emoticon_name= Hash.new
-  puts emoticons.length
+
+  emoticons.each do |emotion, array_faces|
+    array_faces.each do |each_face|
+    end
+  end
   
   
   emoticon_name
