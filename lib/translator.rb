@@ -7,7 +7,7 @@ def load_library(path)
   emoticon_name= Hash.new
   emoticons.each do |emotion, array_faces|
     array_faces.each do |face|
-      con_name[emotion][:japanese]= face
+      
       end
     end
   end
