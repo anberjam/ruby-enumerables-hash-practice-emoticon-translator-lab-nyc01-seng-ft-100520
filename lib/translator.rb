@@ -35,6 +35,7 @@ def get_english_meaning(path, japanese_face)
   emoticon_name.each do |emotion, language|
     language.each do |language, face|
       if face==japanese_face
+        return language
       end
     end
   end
