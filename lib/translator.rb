@@ -22,7 +22,7 @@ end
 
 def get_japanese_emoticon (path, english_face)
   load_library(path)
-  
+  emoticon_name
   
 end
 
