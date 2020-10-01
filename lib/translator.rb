@@ -21,9 +21,16 @@ end
 
 
 def get_japanese_emoticon (path, english_face)
-  load_library(path)
-  
-  
+  emoticon_name=load_library(path)
+  translation="Sorry, that emoticon was not found"
+  emoticon_name.each do |emotion, language|
+    language.each do |language, face|
+      if face==english_face
+        translation= emoticon_name[emotion][:japanese]
+      end
+  end
+end
+ return translation 
 end
 
 
